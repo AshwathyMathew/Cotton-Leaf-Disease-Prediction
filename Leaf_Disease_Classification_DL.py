@@ -41,8 +41,8 @@ train_set = train_datagen.flow_from_directory('./Dataset', target_size = (224, 2
                                             batch_size = 32, class_mode = 'categorical')
 r = model.fit(train_set, epochs = 10, steps_per_epoch = len(train_set))
 from IPython import display
-display.set_matplotlin_formats('svg')
-plt.style.use('seaborn-pastel')
+#display.set_matplotlin_formats('svg')
+#plt.style.use('seaborn-pastel')
 plt.plot(r.history['loss'],label='train loss')
 plt.legend()
 plt.show()
