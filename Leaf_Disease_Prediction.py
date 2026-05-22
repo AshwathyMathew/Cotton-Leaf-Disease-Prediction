@@ -3,12 +3,11 @@ import tensorflow as tf
 from tensorflow.keras.models import load_model
 from tensorflow.keras.utils import load_img, img_to_array
 import os
-
 # List of class labels
-CLASS_LABELS = ['healthy', 'bacterial_blight', 'curl_virus', 'fussarium_wilt']
+CLASS_LABELS = ['bacterial_blight', 'curl_virus', 'fussarium_wilt', 'healthy']
 
 # Load the trained model
-MODEL_PATH = 'model.h5'
+MODEL_PATH = 'model_vgg16.h5'
 
 try:
     model = load_model(MODEL_PATH)
