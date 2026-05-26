@@ -16,4 +16,15 @@ Bacterial Blight	448
 Curl Virus	418
 Fussarium Wilt	419
 Healthy	426
+
+<img width="2940" height="1912" alt="image" src="https://github.com/user-attachments/assets/160f89a2-8ecd-40f1-bed3-0977312065e0" />
+
 <img width="2940" height="1912" alt="image" src="https://github.com/user-attachments/assets/9608563e-987d-4cc6-984d-5c941c05488a" />
+
+<img width="2940" height="1912" alt="image" src="https://github.com/user-attachments/assets/75afe7b4-1a4d-4b53-8472-8491899d09b7" />
+
+<img width="2940" height="1912" alt="image" src="https://github.com/user-attachments/assets/f7aab783-1242-47d6-9387-90b79fa8a55f" />
+
+<img width="2940" height="1912" alt="image" src="https://github.com/user-attachments/assets/cf2da61f-1650-4b08-9d77-00f70f6f45a4" />
+
+
