@@ -13,7 +13,7 @@ app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 @app.route('/', methods=['GET', 'POST'])
 def home():
-    return render_template('predict.html')
+    return render_template('home.html')
 
 @app.route('/prediction', methods=['GET', 'POST'])
 def prediction():
