@@ -19,7 +19,8 @@ def home():
 def prediction():
     msg = ''
     image_url = None  # Variable to store the image path
-
+    if request.method == 'GET':
+        return render_template('predict.html', msg=msg, Title="Disease Prediction")
     if request.method == 'POST':
         if 'image' not in request.files:
             msg = "No file part in the request."
