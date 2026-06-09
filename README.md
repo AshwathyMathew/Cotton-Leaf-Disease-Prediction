@@ -19,6 +19,8 @@ Healthy	426
 
 <img width="2940" height="1912" alt="image" src="https://github.com/user-attachments/assets/3101f9ce-499f-43ba-b758-a7d4b8b8dd3b" />
 
+<img width="2940" height="1912" alt="image" src="https://github.com/user-attachments/assets/557247f6-d6a6-48c9-bcdb-1154b04dbd79" />
+
 <img width="2940" height="1912" alt="image" src="https://github.com/user-attachments/assets/a33c8685-8a79-49af-b898-bffc0370d773" />
 
 <img width="2940" height="1912" alt="image" src="https://github.com/user-attachments/assets/9608563e-987d-4cc6-984d-5c941c05488a" />
