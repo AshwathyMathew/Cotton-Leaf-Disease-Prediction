@@ -12,6 +12,7 @@
 
 </head>
 <body style="background-color: #179b34;">
+    <form method="POST" action="/login">
      <!-- Grey with black text -->
     <div class="container bg-light p-2 mt-5 rounded">
         <div class="row">
@@ -26,16 +27,16 @@
                     <p class="mt-3">Email</p>
                 </div>
                 <div class="row">
-                    <input type="email" class="form-control" style="width: 90%;" placeholder="Enter your email">
+                    <input type="email" name="Email" class="form-control " style="width: 90%;" placeholder="Enter your email">
                 </div>
                 <div class="row">
                     <p class="mt-3">Password</p>
                 </div>
                 <div class="row">
-                    <input type="password" class="form-control" style="width: 90%;" placeholder="Enter your password">
+                    <input type="password" name="Password" class="form-control" style="width: 90%;" placeholder="Enter your password">
                 </div>
                 <div class="row mt-2">
-                    <div class="col"><button class="btn btn-primary ">Login</div>
+                    <div class="col"><button type="submit" class="btn btn-primary ">Login</div>
                     <div class="col"></div>
                     <div class="col"></div>
                 </div>
@@ -47,5 +48,6 @@
             </div>
         </div>
     </div>
+</form>
 </body>
 </html>

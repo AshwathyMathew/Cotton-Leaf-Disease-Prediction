@@ -16,6 +16,16 @@ def home():
     return render_template('home.html')
 @app.route('/login', methods=['GET', 'POST'])
 def login():
+    if request.method == 'POST':
+        # Handle login logic here (e.g., validate username and password)
+        username = request.form.get('Email')
+        password = request.form.get('Password')
+        # For demonstration, we will just check if the username and password are not empty
+        if username=="admin@gmail.com" and password=="admin123":
+            return render_template('predict.html', msg="Login successful!")
+        else:
+            msg = "Please enter both username and password."
+            return render_template('login.html', msg=msg)
     return render_template('login.html')
 @app.route('/prediction', methods=['GET', 'POST'])
 def prediction():
