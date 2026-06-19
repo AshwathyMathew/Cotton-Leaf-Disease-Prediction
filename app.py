@@ -1,3 +1,6 @@
+import smtplib
+from email.mime.text import MIMEText
+from email.mime.multipart import MIMEMultipart
 import os
 from flask import Flask, render_template, request
 from werkzeug.utils import secure_filename
@@ -58,6 +61,42 @@ def prediction():
             return render_template(disease_page, confidence=confidence, image_url=image_url)
     
     return render_template('predict.html', msg=msg, Title="Disease Prediction")
+# Dummy user data for demonstration
+USER_DATA = { 
+    "admin@gmail.com": "admin123",
+    "iamashwathy@gmail.com": "lort qfyo kece juuu"
+}
 
+@app.route('/forgotpassword', methods=['GET', 'POST'])
+def forgot_password():
+    msg = ''
+    if request.method == 'POST':
+        email = request.form.get('email')
+        if email in USER_DATA:
+            password = USER_DATA[email]
+            try:
+                # Set up the SMTP server
+                sender_email = "iamashwathy@gmail.com"  # Replace with your email
+                sender_password = "lort qfyo kece juuu"  # Replace with your email password
+                receiver_email = email
+
+                subject = "Your Password Recovery"
+                body = f"Hello,\n\nYour password is: {password}\n\nRegards,\nTeam"
+
+                # Create the email message
+                message = f"Subject: {subject}\n\n{body}"
+
+                # Connect to the SMTP server and send the email
+                with smtplib.SMTP("smtp.gmail.com", 587) as server:
+                    server.starttls()
+                    server.login(sender_email, sender_password)
+                    server.sendmail(sender_email, receiver_email, message)
+
+                msg = "Password has been sent to your email."
+            except Exception as e:
+                msg = f"Failed to send email: {e}"
+        else:
+            msg = "Email not found in our records."
+    return render_template('forgotpassword.html', msg=msg)
 if __name__ == "__main__":
     app.run(debug=True, port=5001)
